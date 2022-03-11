@@ -15,7 +15,7 @@ from glide_finetune.wds_loader import glide_wds_loader
 
 
 def run_glide_finetune(
-    data_dir="./data",
+    data_dir="/content/data",
     batch_size=1,
     learning_rate=1e-5,
     adam_weight_decay=0.0,
@@ -289,7 +289,7 @@ if __name__ == "__main__":
         data_dir = glob(os.path.join(args.data_dir, "*.tar"))
     
     run_glide_finetune(
-        data_dir=data_dir,
+        data_dir='/content/data',
         batch_size=args.batch_size,
         learning_rate=args.learning_rate,
         adam_weight_decay=args.adam_weight_decay,
