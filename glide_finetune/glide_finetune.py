@@ -4,7 +4,7 @@ from typing import Tuple
 import torch as th
 from glide_text2im.respace import SpacedDiffusion
 from glide_text2im.text2im_model import Text2ImUNet
-from tqdm import tqdm
+from tqdm.notebook import tqdm
 from wandb import wandb
 
 from glide_finetune import glide_util, train_util
